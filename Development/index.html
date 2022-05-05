@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MinionReads</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <style>
+            #time
+            {
+                color: #360303;
+                height: 40px;
+                text-align: center;
+                font-size: 35px;
+                font-family: Tangerine;
+                text-transform: none;
+                padding-bottom: 8px;
+            }
+            .top
+            {
+                text-align: center;
+                background-color:#f5e050;
+                background-image: linear-gradient(to left, #eef589 0%, #f5e050 100%);
+                padding: 3px;
+                font-size:20px;  
+                border-bottom: #eff8ac solid 0.5px;
+            }
+            .sticky{
+                position: fixed;
+                top: 0;
+                width: 100%
+            }
+
+            .slider{
+                width: 50%;
+                height: 500px;
+                float: left;
+                box-sizing: border-box;
+                margin-top: 30px;
+            }
+            .slider img{
+                width: 100%;
+                height: 430px;  
+            }
+            .body{
+                background-image: url('images/bg.jpg');
+                height: 750px;
+                width: 100%;
+            }
+
+            .books{
+                height: fit-content;
+                width: max-content;
+                float: left;
+                margin-bottom: 15px;
+            }
+
+            table{
+                height: fit-content;
+                width: 100%;
+                margin-left: 15px;
+                border: 0.3px solid #c9bcbc;
+                border-collapse: collapse;
+                margin-top: 20px;
+                background-color: #fbfcf7;
+                box-sizing: border-box;
+                box-shadow: 6px 7px 10px gray;
+            }
+            
+            td{
+                height: 300px;
+                width: 230px;
+                text-align: center;
+                border: 0.3px solid #c9bcbc;
+                border-collapse: collapse;
+            }
+            
+            .intro{
+                height: fit-content;
+                width: 50%;
+                float: right;
+                margin-top: 20px ;
+                padding: 30px 20px;
+                box-sizing: border-box;
+                background-color: #fbfdf6;
+                font-size: 20px;
+                padding-right: 100px;
+                margin-bottom: 20px;
+            }
+
+            .books td:hover .overlay
+            {
+                opacity: 1;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!--This is the div for greeting-->
+        <div class="top"> 
+            <h1 id="time"></h1>
+            Welcome to Minion Reads
+            <br>Discover something new!
+        </div>
+
+        <!--This is the header section, it contains the logo and nav bar-->
+        <div class="header" id="myHeader">
+            <div id="logo">
+                <b> MINION<br>
+                READS</b>
+            </div>
+            <nav>
+                <a href="../index.html">HOME</a>
+                <a href="pages/Products.html">PRODUCT</a>
+                <a href="pages/Blog.html">BLOG</a>
+                <a href="pages/Research.html">RESEARCH</a>
+                <span style="word-spacing: -2px;">
+                    <a href="pages/Contact.html">CONTACT US</a>
+                </span>
+            </nav>
+        </div>
+
+        <!--image slider-->
+        <div class="slider">
+            <div id="img">
+              <img src="images/slide1.JPG">
+            </div>
+          </div>
+
+        <!--Contains the details of the store-->
+        <div class="intro">
+            <h2>About Us</h2>
+            <p> minionreads.com is a one-stop shop for Nepali as well as English novels.
+            We'd like to introduce you to our ebook library. Selected books are already available,  
+            and the number of titles will continue to grow. Begin reading them as soon as possible 
+            and in a convenient manner.</p>
+            <br>
+            <p>Our authors come from around the world and have had many different routes into publishing.
+            We connect stories and readers globally, publishing books that reflect the diversity of 
+            the societies we live in.</p>
+            <br>
+            <br>
+            <button id="button" ><a href="pages/Products.html"> Discover More </a></button>
+        </div>
+
+        <!--Contains the author of the month-->
+        <div class="books">
+            <h2 style="font-size: 35px; text-align: center; text-shadow: 3px 3px 5px grey;">From the Author of the month</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/author.jpg" alt="" height="380px">
+                        <h3 style="font-size: 30px;">Kumar Nagarkoti</h3>
+                    <td>
+                        <img src="images/a1.jfif" height="200px">
+                        <br>
+                        <div class="overlay">
+                            <br><h4>Mistika</h4><br>
+                            <b>Price:</b>Rs.599
+                        </div>
+                    <td>
+                        <img src="images/a2.jfif" height="200px">
+                        <br>
+                        <div class="overlay">
+                            <br><h4>Kalpa-Grantha</h4>
+                            <br><b>Price:</b>Rs.459
+                        </div>
+                    <td>
+                        <img src="images/a3.jpg" height="200px">
+                        <br>
+                        <div class="overlay">
+                            <br><h4>Mokshanta</h4>
+                            <br><b>Price:</b>Rs.699
+                        </div>
+                    <td>
+                        <img src="images/a4.jpg" height="200px">
+                        <br>
+                        <div class="overlay">
+                            <h4>Bath-tub</h4>
+                            <br><b>Price:</b>Rs.500
+                        </div>
+                </tr>
+            </table>
+            <br>
+           
+        </div>
+
+
+        <!--This is footer-->
+        <div class="footer">
+            <div style="float: left;">
+                <img src="images/contact us.jpg" alt="" height="250px" width="400px">
+            </div>
+
+            <div style="float: left; padding-left: 30px; padding-top:30px" id="footer">
+                <h3>CONTACT US</h3>
+                01-412300 <br>
+                +977-9801010101 <br>
+                info@minionreads.org.np <br><br>
+                <span style="border: 1px solid; padding: 8px 15px;">
+                <a href="pages/Contact.html">Enquire Now</a>
+                </span> <br> <br>
+                <h3>FOLLOW US </h3> 
+                <a href="https://www.facebook.com">
+                    <img src="images/Facebook.jpg" height="43px" width="45px" >
+                </a>
+                <a href="https:/www.instagram.com">
+                    <img src="images/Instagram.jpg" height="40px" width="40px">
+                </a>
+                <a href="https:/www.whatsapp.com">
+                    <img src="images/WhatsApp.svg.webp" height="46px" width="45px">
+                </a>
+                <a href="https:/www.twitter.com">
+                    <img src="images/Twitter.jpg" height="37px" width="44px">
+                </a>
+            </div>
+        </div>
+        
+        <!--copyright div-->
+        <div id="copyright">
+            &copy2022 Minion Reads. All Rights Reserved.
+        </div>
+
+    </body>
+    <script>
+
+        //js for time and greeting
+        const d= new Date();
+        let hour= d.getHours();
+        if(hour<12)
+        {
+            document.getElementById("time").innerHTML=('Good Morning awesome readers! ');
+        }
+        else if(hour>=12 && hour<=16)
+        {
+            document.getElementById("time").innerHTML=('Good Afternoon awesome readers!');
+        }
+        else{
+            document.getElementById("time").innerHTML=('Good evening awesome readers!');
+        }
+
+
+        //scroll function on header
+        window.onscroll = function() 
+        {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        function myFunction() 
+        {
+            if (window.pageYOffset > sticky) 
+            {
+                header.classList.add("sticky");
+            } 
+            else 
+            {
+                header.classList.remove("sticky");
+            }
+        }
+
+
+        //js for image slider
+        var images = ['images/slide2.jpg','images/slide3.jpg','images/slide4.jpg', 'images/slide1.jpg'];
+        var x = 0;
+        var imgs = document.getElementById('img');
+        setInterval(slider, 2000);
+        function slider() {
+            if (x < images.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+    </script>
+    
+</html>

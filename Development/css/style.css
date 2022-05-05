@@ -1,0 +1,137 @@
+*{
+    margin: 0px auto;
+}
+/*css for the header*/
+.header{
+    height: 54px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #f5e050;
+    border: #f5e050 2px solid 100%;
+    background-image: linear-gradient(to left, #eef589 0%, #f5e050 100%);
+    position: sticky;
+    top: 0ex;
+    z-index: 1;
+    box-shadow: 3px 3px #c2c2c2;
+}
+
+#logo{
+    float: left;
+    height: 100%;
+    width: 15%;
+    font-family: cursive;
+    color: #fffff0;
+    text-align: center;
+    font-size: 21px;   
+}
+
+nav{
+    float: left;
+    height: 100%;
+    width: 70%;
+    font-size: 15px;
+    text-align: center; 
+    word-spacing: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+nav a:link{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-size: 16px;
+    color: #8161a0;
+}
+
+
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*contains the main body part in contact page and blog*/
+.main{
+    background-image: url("../images/back.webp");
+    background-repeat:round;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    border-top: 2px solid;
+}
+
+.overlay
+{
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding-top: 30px;
+    height: 200px;
+    width: 100%;
+    transition: .5s ;
+    opacity:0;
+    margin-top: -200px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.products td:hover .overlay
+{
+    opacity: 1;
+}
+
+.products td:hover .sale
+{
+    opacity: 0;
+}
+            
+#button{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 40%;
+    font-size: 25px;
+    color: #e4f1f8;
+    background-color: #8fbce7;
+    border: #63adf1;
+    border-radius: 5px;
+    font-family: serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#button:hover{
+    background-color: #e4f1f8;
+    color: #115695;
+}
+
+.footer{
+    border-top: 2px dashed black;
+    padding-top: 10px;
+    height: 250px;
+    width: 100%;
+    float: left;
+}
+
+
+#copyright{
+    border: solid #115695;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #115695;
+    color: #ffffff;
+    float: left;
+}

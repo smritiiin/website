@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <style>
+        
+        /*div for the entire content except header and footer*/
+        .products{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        /*Contains the section for books*/
+        .book{
+            height: 465px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            background-color:#fcfcfa
+        }
+        
+        table, td{
+            border: 0.1px solid #e9e6e6;
+            border-collapse: collapse;
+            width: 100%; 
+        }
+
+        td{
+            height: fit-content;
+            width: 150px;    
+        }
+
+        table img{
+            display: block;
+            height: 200px;
+            box-shadow: 10px 5px 5px #888888;
+        }
+
+        .products td:hover .overlay
+        {
+            opacity: 1;
+        }
+
+        .products td:hover .sale
+        {
+            opacity: 0;
+        }
+
+        .book h2, .products h2
+        {
+            font-family: serif;
+            color: #47406ac8;
+            font-size: 35px;  
+        }
+
+        .sale 
+        {
+            height: fit-content;
+            width: 40px;
+            border: #71f465de solid;
+            border-radius: 5px 15px;
+            background-color: #71f465de;
+            position: absolute;
+            margin-top: -210px;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--This is the header-->
+    <div class="header">
+        <div id="logo">
+            <b>MINION<br>
+            READS</b>
+
+        </div>
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="products.html">PRODUCT</a>
+            <a href="../pages/blog.html">BLOG</a>
+            <a href="../pages/research.html">RESEARCH</a>
+            <span style="word-spacing: -2px;">
+                <a href="../pages/Contact.html">CONTACT US</a>
+            </span>
+        </nav>
+    </div>
+
+    <!--This is the main div of this page and contains sub-divs.-->
+    <div class="products">
+        <!--The div for book of the month-->
+        <div class="book">
+            <br>
+            <img src="../images/book1.jpg" height="350px" width="500px">
+            <h2 style="text-shadow: 3px 3px 5px rgb(153, 155, 128);">Book of the month</h2><br>
+            <h4>The Complete American Gods</h4>
+            <b>Author:</b> Neil Gaiman
+            <br><b>Price:</b>Rs.1010
+        </div>
+
+        <!--table tags are used to show books in the store -->
+        <br><br>
+        <h2>Books on Sale </h2><br>
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/1st.png">
+                    <div class="sale">
+                        <p>80%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>The Intelligent Investor</h4><br>
+                        <b>Author:</b> Benjamin Graham
+                        <br><b>Price:</b>Rs.240
+                        <br><span style="text-decoration: line-through;"> Rs.1200</span>
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/2nd.jfif" >
+                    <div class="sale">
+                        <p>60%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>Home Body</h4><br>
+                        <b>Author:</b>Rupi Kaur
+                        <br><b>Price:</b>Rs.400
+                        <br><span style="text-decoration: line-through;"> Rs.1000</span>
+                    </div>
+                </td>
+
+                <td>
+                    <img src="../images/3rd.jfif" >
+                    <div class="sale">
+                        <p>60%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>The Fault In Our Stars</h4><br>
+                        <b>Author:</b>John Green
+                        <br><b>Price:</b>Rs.320
+                        <br><span style="text-decoration: line-through;"> Rs.800</span>
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/4th.jfif" >
+                    <div class="sale">
+                        <p>50%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>Eternal Echoes</h4><br>
+                        <b>Author:</b>Sadhguru
+                        <br><b>Price:</b>Rs.725
+                        <br><span style="text-decoration: line-through;"> Rs.1450</span>
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/5th.jfif" >
+                    <div class="sale">
+                        <p>30%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>Midnight Sun</h4><br>
+                        <b>Author:</b> Stephenie Meyer
+                        <br><b>Price:</b>Rs.700
+                        <br><span style="text-decoration: line-through;"> Rs.1000</span>
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/6th.jpg" >
+                    <div class="sale">
+                        <p>60%</p>
+                    </div>
+                    <div class="overlay">
+                        <br><h4>Land Where I Flee</h4><br>
+                        <b>Author:</b>Prajwal Parajuly
+                        <br><b>Price:</b>Rs.240
+                        <br><span style="text-decoration: line-through;"> Rs.599</span>
+                    </div>
+                </td>
+               
+            </tr>
+        </table>
+        <br>
+        <h2>Best Seller</h2><br>
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/book2.jpg" >
+                    <div class="overlay">
+                        <br><h4>Atomic Habits</h4><br>
+                        <b>Author:</b> James Clear
+                        <br><b>Price:</b>Rs.899
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/book3.jfif">
+                    <div class="overlay">
+                        <br><h4>The Subtle Art Of <br> Not Giving a F*ck</h4>
+                        <br><b>Author:</b> Mark Manson
+                        <br><b>Price:</b>Rs.499
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/book4.jfif">
+                    <div class="overlay">
+                        <br><h4>Fangirl</h4><br>
+                        <b>Author:</b>Ranbow Rowell
+                        <br><b>Price:</b>Rs.859
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/book5.jpg">
+                    <div class="overlay">
+                        <br><h4>A Promised Land</h4><br>
+                        <b>Author:</b> Barack Obama
+                        <br><b>Price:</b>Rs.1100
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/book6.jfif" >
+                    <div class="overlay">
+                        <br><h4>Crown Of Midnight</h4><br>
+                        <b>Author:</b>Sarah Mass
+                        <br><b>Price:</b>Rs.679
+                    </div>
+                    
+                </td>
+                <td>
+                    <img src="../images/book7.jfif">
+                    <div class="overlay">
+                        <br><h4>The Archer</h4><br>
+                        <b>Author:</b> Paulo Coelho
+                        <br><b>Price:</b>Rs.500
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>New Arrivals</h2><br>
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/new1.jfif">
+                    <div class="overlay">
+                        <br><h4>The Ikigai journey</h4><br>
+                        <b>Author:</b>Hector Garcia
+                        <br><b>Price:</b>Rs.499
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/new2.jfif">
+                    <div class="overlay">
+                        <br><h4>The Fifth Mountain</h4><br>
+                        <b>Author:</b>Paulo Coelho
+                        <br><b>Price:</b>Rs.699
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/new3.jfif">
+                    <div class="overlay">
+                        <br><h4>The City Of Brass</h4><br>
+                        <b>Author:</b>SA Chakraborty
+                        <br><b>Price:</b>Rs.359
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/new4.jfif">
+                    <div class="overlay">
+                        <br><h4>Karnali Blues</h4><br>
+                        <b>Author:</b>Buddisagar
+                        <br><b>Price:</b>Rs.789
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/new5.jfif">
+                    <div class="overlay">
+                        <br><h4>Sold</h4><br>
+                        <b>Author:</b>Patricia McCormick
+                        <br><b>Price:</b>Rs.499
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/new6.jfif">
+                    <div class="overlay">
+                        <br><h4>The Ickabog</h4><br>
+                        <b>Author:</b>JK Rowling
+                        <br><b>Price:</b>Rs.899
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>Most Read Books</h2><br>
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/best1.jfif">
+                    <div class="overlay">
+                        <br><h4>The Alchemist</h4><br>
+                        <b>Author:</b>Paulo Coelho
+                        <br><b>Price:</b>Rs.555
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/best2.jpg">
+                    <div class="overlay">
+                        <br><h4>I Am Malala</h4><br>
+                        <b>Author:</b>Malala Yousafzai
+                        <br><b>Price:</b>Rs.750
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/best3.jfif" >
+                    <div class="overlay">
+                        <br><h4>Sapiens</h4><br>
+                        <b>Author:</b>Yuval Noah Harari
+                        <br><b>Price:</b>Rs.1299
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/best4.jfif">
+                    <div class="overlay">
+                        <br><h4>The Open Road</h4><br>
+                        <b>Author:</b>Pico Iyer
+                        <br><b>Price:</b>Rs.450
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/best5.jfif">
+                    <div class="overlay">
+                        <br><h4>Karma</h4><br>
+                        <b>Author:</b>Sadhguru
+                        <br><b>Price:</b>Rs.1400
+                    </div>
+                </td>
+                <td>
+                    <img src="../images/best6.jfif">
+                    <div class="overlay">
+                        <br><h4>Muna Madan</h4><br>
+                        <b>Author:</b>Laxmi P. Devkota
+                        <br><b>Price:</b>350
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--This is footer-->
+    <div class="footer">
+        <div style="float: left;">
+            <img src="../images/contact us.jpg" alt="" height="250px" width="400px">
+        </div>
+
+        <div style="float: left; padding-left: 30px; padding-top:30px">
+            <h3>CONTACT US</h3>
+            01-412300 <br>
+            +977-9801010101 <br>
+            info@minionreads.org.np <br><br>
+            <span style="border: 1px solid; padding: 8px 15px;">
+               <a href="pages/Contact.html">Enquire Now</a>
+            </span> <br> <br>
+            <h3>FOLLOW US </h3> 
+            <a href="https://www.facebook.com">
+                <img src="../images/Facebook.jpg" height="43px" width="45px" >
+            </a>
+            <a href="https:/www.instagram.com">
+                <img src="../images/Instagram.jpg" height="40px" width="40px">
+            </a>
+            <a href="https:/www.whatsapp.com">
+                <img src="../images/WhatsApp.svg.webp" height="46px" width="45px">
+            </a>
+            <a href="https:/www.twitter.com">
+                <img src="../images/Twitter.jpg" height="37px" width="44px">
+            </a>
+        </div>
+    </div>
+    
+    <!--div for copyright-->
+    <div id="copyright">
+        &copy2022 Minion Reads. All Rights Reserved.
+    </div>
+
+</body>
+</html>
+
